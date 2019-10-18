@@ -23,8 +23,7 @@ namespace TestSocketClient
                     String dateTime = DateTime.Now.ToString("h:mm:ss tt");
                     byte[] messageSent = Encoding.ASCII.GetBytes("[Client] Connecting to 127.0.0.1:8099 at " + dateTime);
                     int byteSent = conn.Send(messageSent);
-                    byte[] messageReceived = new byte[1024];
-
+                    
                     // Close TCP Connection
                     conn.Shutdown(SocketShutdown.Both);
                     conn.Close();
