@@ -18,7 +18,6 @@ namespace TestSocketClient
                 {
                     // Connect to Server
                     conn.Connect(server);
-                    Console.WriteLine("Connected to {0} ", conn.RemoteEndPoint.ToString());
 
                     // Send Data to Server
                     String dateTime = DateTime.Now.ToString("h:mm:ss tt");
