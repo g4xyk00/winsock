@@ -26,7 +26,6 @@ namespace TestSocketServer{
                         data += Encoding.ASCII.GetString(bytes, 0, client.Receive(bytes));
                         break;
                     }
-
                     
                     File.WriteAllText (@"C:\temp\newFile.txt", data);
                     Console.WriteLine("[Server] File created.");
