@@ -27,6 +27,7 @@ namespace TestSocketServer{
                         break;
                     }
                     
+                    //Create file annd Insert Client data
                     File.WriteAllText (@"C:\temp\newFile.txt", data);
                     Console.WriteLine("[Server] File created.");
                 }
