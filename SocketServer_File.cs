@@ -28,8 +28,8 @@ namespace TestSocketServer{
                     }
 
                     
-					File.WriteAllText (@"C:\temp\newFile.txt", data);
-					Console.WriteLine("[Server] File created.");
+                    File.WriteAllText (@"C:\temp\newFile.txt", data);
+                    Console.WriteLine("[Server] File created.");
                 }
             }
             catch (Exception e){
